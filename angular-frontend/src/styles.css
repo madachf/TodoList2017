@@ -1,27 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  font-size: 18px;
+  font-size: 18 px;
   line-height: 1.58;
-  background: #355C7D ;
-  background: -webkit-linear-gradient(to right, #626262 , #626262);
+    background: #355C7D ;
+  background: -webkit-linear-gradient(to right, #F8B195 , #355C7D);
   background: linear-gradient(to right,  #F8B195  , #355C7D ); 
-  color: #333;
+
+  font-style: bold;
 }
 
 h1 {
   font-size: 36px;
   color: #355C7D;
+  -webkit-transition: font-size 2s, letter-spacing 2s;
+  transition: font-size 2s, letter-spacing 2s;
+ 
+}
+
+h1:hover{
+	font-size: 45px;
+	letter-spacing: 10px;
 }
 
 h2 {
   font-size: 18px;
   text-align: center;
-  color: #626262;
+  color: gray;
+  -webkit-transition: font-size 2s, letter-spacing 2s;
+  transition: font-size 2s, letter-spacing 2s;
+}
+
+h2:hover{
+	font-size: 20px;
+	letter-spacing: 2px;
 }
 
 * {
   box-sizing: border-box;
+
 }
 
 i {
@@ -38,12 +55,13 @@ input {
   text-align: center;
 }
 
-.todo-content {
+.todo-content { 
+  border-radius: 10px;
   max-width: 95%;
   width: 100%;
   margin: 0 auto;
   margin-top: 60px;
-  background-color: #fff ;
+  background-color: #fff;
   padding: 15px; 
   box-shadow: 0 0 4px rgba(0,0,0,.14), 0 10px 20px rgba(0,0,0,.28);
 }
@@ -71,7 +89,7 @@ input {
 
 .todo-content .alert-danger {
   padding-left: 15px;
-  font-size: 14px;
+  font-size: 18px;
   color: red;
   padding-top: 5px;
 }
@@ -123,7 +141,7 @@ input {
 }
 
 .todo-content .todo-actions i, .todo-content .edit-actions i {
-    font-size: 17px;
+    font-size: 25px;
 }
 
 .todo-content .todo-actions a, .todo-content .edit-actions a {
@@ -160,9 +178,11 @@ li.completed .toggle-completed-checkbox:before {
 
 li.completed .todo-title {
   text-decoration: line-through;
+  font-style:bold;
   color: #757575;
+  font-size: 20px;
 }
 
 li.completed i {
-  color: #757575;
+  color: #626262;
 }
