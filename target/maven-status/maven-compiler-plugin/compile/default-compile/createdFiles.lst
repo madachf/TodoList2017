@@ -1,0 +1,4 @@
+com/edu/elte/alkfejl/todolist/repositories/TodoRepository.class
+com/edu/elte/alkfejl/todolist/controllers/TodoController.class
+com/edu/elte/alkfejl/todolist/TodolistApplication.class
+com/edu/elte/alkfejl/todolist/models/Todo.class
